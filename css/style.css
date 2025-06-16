@@ -33,14 +33,14 @@ h1 {
 
 /* Картинка космограммы */
 .cosmogram {
-  width: 60%; /* немного меньше */
+  width: 70%; /* немного меньше */
   margin-bottom: 20px;
   border-radius: 10px;
 }
 
 /* Описательный текст */
 .desc {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -50,20 +50,23 @@ h1 {
   display: inline-block;
   background-color: #b884f5;
   color: #fff;
-  font-size: 16px;
-  font-weight: bold; /* жирный текст кнопки */
-  padding: 12px 20px;
+  font-family: Arial, sans-serif;  /* шрифт Arial */
+  font-size: 18px;                 /* увеличенный размер */
+  font-weight: bold;               /* жирнее */
+  padding: 14px 24px;              /* чуть больше паддинги */
   border: none;
   border-radius: 8px;
   text-decoration: none;
   margin-bottom: 12px;
 }
 
-/* Ссылка «назад» */
+/* Ссылка «Back to Astrolove» */
 .back-link {
   display: block;
   color: #e3cfff;
-  font-size: 14px;
+  font-family: Georgia, serif;
+  font-size: 16px;     /* увеличенный размер */
+  font-weight: bold;   /* жирнее */
   text-decoration: none;
-  margin-top: 8px;
+  margin-top: 12px;
 }
