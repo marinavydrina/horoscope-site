@@ -70,3 +70,123 @@ h1 {
   text-decoration: none;
   margin-top: 12px;
 }
+
+/* 1. Общие стили и фон (как раньше) */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.gradient-bg {
+  background: linear-gradient(180deg, #1c062e 0%, #3a0c59 100%);
+  min-height: 100vh;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: #f5e9dc;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+/* 2. Заголовок */
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* 3. Таб-бар */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px 0;
+  font-size: 16px;
+  color: rgba(245, 233, 220, 0.7);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: rgba(255,255,255,0.15);
+  color: #f5e9dc;
+  font-weight: bold;
+}
+
+/* 4. Карточки */
+.swiper {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+
+.card {
+  display: none;
+  text-align: left;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.card.active {
+  display: block;
+}
+
+.card p {
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* 5. Рекомендация */
+.tip {
+  font-size: 14px;
+  color: #ffe3e3;
+  font-weight: bold;
+}
+
+/* 6. Пагинация (точки) */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #b884f5;
+}
+
+/* 7. Ссылка «назад» */
+.back-link {
+  display: block;
+  color: #e3cfff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 12px;
+}
