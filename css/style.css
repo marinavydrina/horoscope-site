@@ -262,26 +262,25 @@ h1 {
   font-weight: bold;
 }
 
-/* Основная кнопка уведомления */
+/* Notify-кнопка оформляется как основная .btn */
 .notify-btn {
-  display: inline-block;
-  background-color: transparent;          /* прозрачный фон */
-  border: 2px solid #b884f5;              /* цвет рамки как у основной кнопки */
-  color: #b884f5;                         /* тот же акцентный цвет */
+  /* либо просто: @extend .btn, если препроцессор */
+  background-color: #b884f5;   /* тот же цвет фона */
+  color: #fff;                 /* белый текст */
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-  padding: 12px 24px;                     /* больше пространства */
+  padding: 14px 24px;
+  border: none;
   border-radius: 8px;
   text-decoration: none;
-  transition:                         /* плавная анимация при hover */
-    background-color 0.2s,
-    color 0.2s;
+  display: inline-block;
   margin: 16px auto 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-/* Hover-эффект */
 .notify-btn:hover {
-  background-color: #b884f5;              /* заливка при наведении */
-  color: #fff;                            /* светлый текст */
+  background-color: #9862d1;   /* чуть темнее на hover */
+  text-decoration: none;
 }
