@@ -244,3 +244,44 @@ h1 {
   font-weight: bold;      /* только заголовок жирный */
   font-style: normal;     /* отменяем курсив у заголовка */
 }
+
+.card p {
+  text-align: center;
+}
+
+/* Увеличиваем размер заголовков вкладок */
+.tab {
+  /* предыдущие свойства... */
+  font-size: 20px;      /* вместо 16px, или другой размер по вкусу */
+  font-family: Georgia, serif;
+}
+
+.tab.active {
+  /* предыдущие свойства... */
+  font-size: 20px;      /* синхронно увеличиваем активную вкладку */
+  font-weight: bold;
+}
+
+/* Основная кнопка уведомления */
+.notify-btn {
+  display: inline-block;
+  background-color: transparent;          /* прозрачный фон */
+  border: 2px solid #b884f5;              /* цвет рамки как у основной кнопки */
+  color: #b884f5;                         /* тот же акцентный цвет */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;                     /* больше пространства */
+  border-radius: 8px;
+  text-decoration: none;
+  transition:                         /* плавная анимация при hover */
+    background-color 0.2s,
+    color 0.2s;
+  margin: 16px auto 0;
+}
+
+/* Hover-эффект */
+.notify-btn:hover {
+  background-color: #b884f5;              /* заливка при наведении */
+  color: #fff;                            /* светлый текст */
+}
