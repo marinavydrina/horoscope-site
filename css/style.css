@@ -190,3 +190,44 @@ h1 {
   text-decoration: none;
   margin-top: 12px;
 }
+
+.notify-btn {
+  display: block;
+  margin: 16px auto;
+  background-color: transparent;
+  border: 1px solid #b884f5;
+  color: #f5e9dc;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.tab {
+  font-family: Georgia, serif !important;
+}
+
+.tab.active {
+  font-family: Georgia, serif !important;
+}
+
+/* 1. Больший шрифт для основного текста в карточках */
+.card p {
+  font-size: 17px;    /* было 15px */
+  line-height: 1.6;   /* чуть более воздушный межстрочный интервал */
+}
+
+/* 2. Центрируем и делаем курсивом весь блок рекомендаций */
+.tip {
+  text-align: center; /* выравнивание по центру */
+  font-style: italic; /* курсив */
+  margin-top: 12px;
+}
+
+/* 3. Заголовок «Recommendation for July:» делаем жирным и не курсивом */
+.tip strong {
+  font-weight: bold;      /* жирный */
+  font-style: normal;     /* отменяем курсив у заголовка */
+}
