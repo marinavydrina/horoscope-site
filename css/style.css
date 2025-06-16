@@ -1,14 +1,20 @@
-/* фон-градиент по макету */
+/* css/style.css */
+
+/* Обеспечиваем, чтобы фон растягивался на весь экран */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .gradient-bg {
   background: linear-gradient(180deg, #1c062e 0%, #3a0c59 100%);
   min-height: 100vh;
 }
 
-/* контейнер и базовые стили */
+/* Базовые стили */
 body {
-  margin: 0;
   font-family: Georgia, serif;
-  color: #fff;
+  color: #f5e9dc; /* цвет шрифта по макету */
 }
 
 .container {
@@ -18,33 +24,34 @@ body {
   text-align: center;
 }
 
-/* заголовок */
+/* Заголовок */
 h1 {
-  font-size: 24px;
+  font-size: 32px; /* увеличенный размер */
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
-/* картинка космограммы */
+/* Картинка космограммы */
 .cosmogram {
-  width: 80%;
+  width: 60%; /* немного меньше */
   margin-bottom: 20px;
   border-radius: 10px;
 }
 
-/* описательный текст */
+/* Описательный текст */
 .desc {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
 
-/* кнопка */
+/* Кнопка */
 .btn {
   display: inline-block;
   background-color: #b884f5;
   color: #fff;
   font-size: 16px;
+  font-weight: bold; /* жирный текст кнопки */
   padding: 12px 20px;
   border: none;
   border-radius: 8px;
@@ -52,7 +59,7 @@ h1 {
   margin-bottom: 12px;
 }
 
-/* ссылка «назад» */
+/* Ссылка «назад» */
 .back-link {
   display: block;
   color: #e3cfff;
